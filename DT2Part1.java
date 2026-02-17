@@ -4,7 +4,7 @@ class DevTech2Part1{
     public static void main (String args[]){
         try{
             Connection dbCxn=DriverManager.getConnection(
-                "jdbc:mysql://localhost:53326/BoatsAndSailrs","root","dev_pair2"
+                "jdbc:mysql://localhost:53326/BoatsAndSailors","root","dev_pair2"
             );
             String boatQuery = "select * from Boat";
             System.out.println(boatQuery);
