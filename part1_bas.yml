@@ -1,15 +1,15 @@
 services:
   db2:
-  image: mysql/mysql-server:latest
-  restart: always
-  environment:
-    MYSQL_ROOT_PASSWORD: dev_pair2
-    MYSQL_DATABASE: BoatsAndSailors
-    MYSQL_ROOT_HOST: '%'
-  volumes:
-    - basdat2:/var/lib/mysql
-  ports:
-    - "53326:3306"
+    image: mysql/mysql-server:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: dev_pair2
+      MYSQL_DATABASE: BoatsAndSailors
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - basdat2:/var/lib/mysql
+    ports:
+      - "53326:3306"
 
 volumes:
-  basdat9:
+  basdat2:
